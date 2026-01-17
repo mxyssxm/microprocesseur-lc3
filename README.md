@@ -30,6 +30,9 @@ L’objectif est de comprendre le fonctionnement interne d’un processeur : dé
 - **index** : calcule en `R0` l’adresse de la première apparition d’un caractère (code dans `R2`) dans une chaîne
 - **strcpy** : copie une chaîne source vers une chaîne destination
 - **strncpy** : copie une chaîne avec une limite de caractères
+- **reverse** : inverse l’ordre des bits d’un mot 16 bits
+- **ctz** : compte le nombre de zéros consécutifs à droite (bits de poids faible)
+- **clz** : compte le nombre de zéros consécutifs à gauche (bits de poids
 
 Fichiers fournis en :
 - `.asm` : version lisible en assembleur
@@ -40,15 +43,20 @@ Fichiers fournis en :
 ## Organisation du projet
 ```text
 /
-├── logisim/
-│   └── lc3.circ          # Circuit principal Logisim
+├── .circ/
+│   ├── LC-3-v1.circ
+│   └── LC-3-v2.circ    
 │
-├── asm/
+├── .asm/
+│   ├── fonctions.asm
 │   ├── index.asm
 │   ├── strcpy.asm
-│   └── strncpy.asm
+│   ├── strncpy.asm
+│   ├── testCLZ.asm
+│   ├── testCTZ.asm
+│   └── testReverse.asm
 │
-├── mem/
+├── .mem/
 │   ├── index.mem
 │   ├── strcpy.mem
 │   └── strncpy.mem
