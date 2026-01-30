@@ -4,6 +4,7 @@
 Ce projet consiste à concevoir et implémenter une **architecture simplifiée de processeur LC-3** à l’aide de **Logisim**, ainsi qu’à développer et tester plusieurs **programmes en assembleur LC-3**.  
 L’objectif est de comprendre le fonctionnement interne d’un processeur : décodage des instructions, exécution, accès mémoire et mise à jour des flags.
 
+
 ---
 
 ## Objectifs du projet
